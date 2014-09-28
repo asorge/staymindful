@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4A1CFAC2-0D0A-4701-8D7F-619D8637BD03</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mindfulness journal</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>223127F8EC4641F870A64ABA6EC81A05CCFA253B</key>
+		<string>https://github.com/asorge/mindfulnessjournal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mindfulness journal/mindfulness journal.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>223127F8EC4641F870A64ABA6EC81A05CCFA253B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/asorge/mindfulnessjournal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>223127F8EC4641F870A64ABA6EC81A05CCFA253B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>223127F8EC4641F870A64ABA6EC81A05CCFA253B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mindfulnessjournal</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CE67E2719D7D77C00D74F45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E2619D7D77C00D74F45 /* Images.xcassets */; };
+		0CE67E2A19D7D77C00D74F45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E2819D7D77C00D74F45 /* LaunchScreen.xib */; };
+		0CE67E3619D7D77C00D74F45 /* mindfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */; };
+		0CE67E5819D7D88200D74F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4619D7D88200D74F45 /* AppDelegate.swift */; };
+		0CE67E5919D7D88200D74F45 /* BlankJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */; };
+		0CE67E5A19D7D88200D74F45 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */; };
+		0CE67E5B19D7D88200D74F45 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4919D7D88200D74F45 /* FirstViewController.swift */; };
+		0CE67E5C19D7D88200D74F45 /* GoalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */; };
+		0CE67E5D19D7D88200D74F45 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */; };
+		0CE67E5E19D7D88200D74F45 /* GoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4C19D7D88200D74F45 /* GoalTableViewController.swift */; };
+		0CE67E5F19D7D88200D74F45 /* JournalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4D19D7D88200D74F45 /* JournalCollectionView.swift */; };
+		0CE67E6019D7D88200D74F45 /* JournalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4E19D7D88200D74F45 /* JournalCollectionViewCell.swift */; };
+		0CE67E6119D7D88200D74F45 /* JournalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4F19D7D88200D74F45 /* JournalCollectionViewController.swift */; };
+		0CE67E6219D7D88200D74F45 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5019D7D88200D74F45 /* JournalEntryViewController.swift */; };
+		0CE67E6319D7D88200D74F45 /* JournalNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5119D7D88200D74F45 /* JournalNavigationViewController.swift */; };
+		0CE67E6419D7D88200D74F45 /* JournalPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5219D7D88200D74F45 /* JournalPromptViewController.swift */; };
+		0CE67E6519D7D88200D74F45 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5319D7D88200D74F45 /* NewEntryViewController.swift */; };
+		0CE67E6619D7D88200D74F45 /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5419D7D88200D74F45 /* NewGoalViewController.swift */; };
+		0CE67E6719D7D88200D74F45 /* NewJournalCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5519D7D88200D74F45 /* NewJournalCellTableViewCell.swift */; };
+		0CE67E6819D7D88200D74F45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5619D7D88200D74F45 /* SecondViewController.swift */; };
+		0CE67E6919D7D88200D74F45 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E5719D7D88200D74F45 /* SettingsViewController.swift */; };
+		0CE67E7319D7D8FA00D74F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7119D7D8FA00D74F45 /* Main.storyboard */; };
+		0CE67E7719D7DAB400D74F45 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7419D7DAB400D74F45 /* icon1.png */; };
+		0CE67E7819D7DAB400D74F45 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7519D7DAB400D74F45 /* icon2.png */; };
+		0CE67E7919D7DAB400D74F45 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7619D7DAB400D74F45 /* icon3.png */; };
+		0CE67E7F19D7DB0600D74F45 /* NewObsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */; };
+		0CE67E8019D7DB0600D74F45 /* ObservationsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */; };
+		0CE67E8119D7DB0600D74F45 /* ObservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */; };
+		0CE67E8319D7DB0600D74F45 /* ObsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */; };
+		0CE67E8519D7DD6F00D74F45 /* staymindful.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E8419D7DD6F00D74F45 /* staymindful.png */; };
+		0CE67E8719D7DDAE00D74F45 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CE67E3019D7D77C00D74F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CE67E1019D7D77B00D74F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CE67E1719D7D77C00D74F45;
+			remoteInfo = mindful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CE67E1819D7D77C00D74F45 /* mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE67E1C19D7D77C00D74F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE67E2619D7D77C00D74F45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0CE67E2919D7D77C00D74F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0CE67E2F19D7D77C00D74F45 /* mindfulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE67E3419D7D77C00D74F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulTests.swift; sourceTree = "<group>"; };
+		0CE67E4619D7D88200D74F45 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/AppDelegate.swift"; sourceTree = "<group>"; };
+		0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlankJournalViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/BlankJournalViewController.swift"; sourceTree = "<group>"; };
+		0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntriesTableViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/EntriesTableViewController.swift"; sourceTree = "<group>"; };
+		0CE67E4919D7D88200D74F45 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/FirstViewController.swift"; sourceTree = "<group>"; };
+		0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableView.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/GoalTableView.swift"; sourceTree = "<group>"; };
+		0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/GoalTableViewCell.swift"; sourceTree = "<group>"; };
+		0CE67E4C19D7D88200D74F45 /* GoalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/GoalTableViewController.swift"; sourceTree = "<group>"; };
+		0CE67E4D19D7D88200D74F45 /* JournalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalCollectionView.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalCollectionView.swift"; sourceTree = "<group>"; };
+		0CE67E4E19D7D88200D74F45 /* JournalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalCollectionViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalCollectionViewCell.swift"; sourceTree = "<group>"; };
+		0CE67E4F19D7D88200D74F45 /* JournalCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalCollectionViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalCollectionViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5019D7D88200D74F45 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalEntryViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalEntryViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5119D7D88200D74F45 /* JournalNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalNavigationViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalNavigationViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5219D7D88200D74F45 /* JournalPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalPromptViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/JournalPromptViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5319D7D88200D74F45 /* NewEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewEntryViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/NewEntryViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5419D7D88200D74F45 /* NewGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewGoalViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/NewGoalViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5519D7D88200D74F45 /* NewJournalCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewJournalCellTableViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/NewJournalCellTableViewCell.swift"; sourceTree = "<group>"; };
+		0CE67E5619D7D88200D74F45 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/SecondViewController.swift"; sourceTree = "<group>"; };
+		0CE67E5719D7D88200D74F45 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/SettingsViewController.swift"; sourceTree = "<group>"; };
+		0CE67E7219D7D8FA00D74F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CE67E7419D7DAB400D74F45 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/icon1.png"; sourceTree = "<group>"; };
+		0CE67E7519D7DAB400D74F45 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/icon2.png"; sourceTree = "<group>"; };
+		0CE67E7619D7DAB400D74F45 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon3.png; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/icon3.png"; sourceTree = "<group>"; };
+		0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewObsCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/NewObsCell.swift"; sourceTree = "<group>"; };
+		0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsTableView.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObservationsTableView.swift"; sourceTree = "<group>"; };
+		0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsTableViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObservationsTableViewController.swift"; sourceTree = "<group>"; };
+		0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObsViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObsViewCell.swift"; sourceTree = "<group>"; };
+		0CE67E8419D7DD6F00D74F45 /* staymindful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staymindful.png; sourceTree = "<group>"; };
+		0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CE67E1519D7D77C00D74F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CE67E2C19D7D77C00D74F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE67E0F19D7D77B00D74F45 = {
+			isa = PBXGroup;
+			children = (
+				0CE67E1A19D7D77C00D74F45 /* mindful */,
+				0CE67E3219D7D77C00D74F45 /* mindfulTests */,
+				0CE67E1919D7D77C00D74F45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CE67E1919D7D77C00D74F45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CE67E1819D7D77C00D74F45 /* mindful.app */,
+				0CE67E2F19D7D77C00D74F45 /* mindfulTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CE67E1A19D7D77C00D74F45 /* mindful */ = {
+			isa = PBXGroup;
+			children = (
+				0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */,
+				0CE67E8419D7DD6F00D74F45 /* staymindful.png */,
+				0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */,
+				0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */,
+				0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */,
+				0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */,
+				0CE67E7419D7DAB400D74F45 /* icon1.png */,
+				0CE67E7519D7DAB400D74F45 /* icon2.png */,
+				0CE67E7619D7DAB400D74F45 /* icon3.png */,
+				0CE67E7119D7D8FA00D74F45 /* Main.storyboard */,
+				0CE67E4619D7D88200D74F45 /* AppDelegate.swift */,
+				0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */,
+				0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */,
+				0CE67E4919D7D88200D74F45 /* FirstViewController.swift */,
+				0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */,
+				0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */,
+				0CE67E4C19D7D88200D74F45 /* GoalTableViewController.swift */,
+				0CE67E4D19D7D88200D74F45 /* JournalCollectionView.swift */,
+				0CE67E4E19D7D88200D74F45 /* JournalCollectionViewCell.swift */,
+				0CE67E4F19D7D88200D74F45 /* JournalCollectionViewController.swift */,
+				0CE67E5019D7D88200D74F45 /* JournalEntryViewController.swift */,
+				0CE67E5119D7D88200D74F45 /* JournalNavigationViewController.swift */,
+				0CE67E5219D7D88200D74F45 /* JournalPromptViewController.swift */,
+				0CE67E5319D7D88200D74F45 /* NewEntryViewController.swift */,
+				0CE67E5419D7D88200D74F45 /* NewGoalViewController.swift */,
+				0CE67E5519D7D88200D74F45 /* NewJournalCellTableViewCell.swift */,
+				0CE67E5619D7D88200D74F45 /* SecondViewController.swift */,
+				0CE67E5719D7D88200D74F45 /* SettingsViewController.swift */,
+				0CE67E2619D7D77C00D74F45 /* Images.xcassets */,
+				0CE67E2819D7D77C00D74F45 /* LaunchScreen.xib */,
+				0CE67E1B19D7D77C00D74F45 /* Supporting Files */,
+			);
+			path = mindful;
+			sourceTree = "<group>";
+		};
+		0CE67E1B19D7D77C00D74F45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CE67E1C19D7D77C00D74F45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CE67E3219D7D77C00D74F45 /* mindfulTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */,
+				0CE67E3319D7D77C00D74F45 /* Supporting Files */,
+			);
+			path = mindfulTests;
+			sourceTree = "<group>";
+		};
+		0CE67E3319D7D77C00D74F45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CE67E3419D7D77C00D74F45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CE67E1719D7D77C00D74F45 /* mindful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CE67E3919D7D77C00D74F45 /* Build configuration list for PBXNativeTarget "mindful" */;
+			buildPhases = (
+				0CE67E1419D7D77C00D74F45 /* Sources */,
+				0CE67E1519D7D77C00D74F45 /* Frameworks */,
+				0CE67E1619D7D77C00D74F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mindful;
+			productName = mindful;
+			productReference = 0CE67E1819D7D77C00D74F45 /* mindful.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CE67E2E19D7D77C00D74F45 /* mindfulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CE67E3C19D7D77C00D74F45 /* Build configuration list for PBXNativeTarget "mindfulTests" */;
+			buildPhases = (
+				0CE67E2B19D7D77C00D74F45 /* Sources */,
+				0CE67E2C19D7D77C00D74F45 /* Frameworks */,
+				0CE67E2D19D7D77C00D74F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CE67E3119D7D77C00D74F45 /* PBXTargetDependency */,
+			);
+			name = mindfulTests;
+			productName = mindfulTests;
+			productReference = 0CE67E2F19D7D77C00D74F45 /* mindfulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CE67E1019D7D77B00D74F45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ally Sorge";
+				TargetAttributes = {
+					0CE67E1719D7D77C00D74F45 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					0CE67E2E19D7D77C00D74F45 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 0CE67E1719D7D77C00D74F45;
+					};
+				};
+			};
+			buildConfigurationList = 0CE67E1319D7D77B00D74F45 /* Build configuration list for PBXProject "mindful" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CE67E0F19D7D77B00D74F45;
+			productRefGroup = 0CE67E1919D7D77C00D74F45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CE67E1719D7D77C00D74F45 /* mindful */,
+				0CE67E2E19D7D77C00D74F45 /* mindfulTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CE67E1619D7D77C00D74F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE67E2A19D7D77C00D74F45 /* LaunchScreen.xib in Resources */,
+				0CE67E7819D7DAB400D74F45 /* icon2.png in Resources */,
+				0CE67E7919D7DAB400D74F45 /* icon3.png in Resources */,
+				0CE67E2719D7D77C00D74F45 /* Images.xcassets in Resources */,
+				0CE67E7719D7DAB400D74F45 /* icon1.png in Resources */,
+				0CE67E8519D7DD6F00D74F45 /* staymindful.png in Resources */,
+				0CE67E7319D7D8FA00D74F45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CE67E2D19D7D77C00D74F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CE67E1419D7D77C00D74F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE67E5F19D7D88200D74F45 /* JournalCollectionView.swift in Sources */,
+				0CE67E6819D7D88200D74F45 /* SecondViewController.swift in Sources */,
+				0CE67E6219D7D88200D74F45 /* JournalEntryViewController.swift in Sources */,
+				0CE67E5A19D7D88200D74F45 /* EntriesTableViewController.swift in Sources */,
+				0CE67E5919D7D88200D74F45 /* BlankJournalViewController.swift in Sources */,
+				0CE67E5C19D7D88200D74F45 /* GoalTableView.swift in Sources */,
+				0CE67E5819D7D88200D74F45 /* AppDelegate.swift in Sources */,
+				0CE67E8119D7DB0600D74F45 /* ObservationsTableViewController.swift in Sources */,
+				0CE67E5D19D7D88200D74F45 /* GoalTableViewCell.swift in Sources */,
+				0CE67E8319D7DB0600D74F45 /* ObsViewCell.swift in Sources */,
+				0CE67E6119D7D88200D74F45 /* JournalCollectionViewController.swift in Sources */,
+				0CE67E7F19D7DB0600D74F45 /* NewObsCell.swift in Sources */,
+				0CE67E6419D7D88200D74F45 /* JournalPromptViewController.swift in Sources */,
+				0CE67E6619D7D88200D74F45 /* NewGoalViewController.swift in Sources */,
+				0CE67E8019D7DB0600D74F45 /* ObservationsTableView.swift in Sources */,
+				0CE67E5B19D7D88200D74F45 /* FirstViewController.swift in Sources */,
+				0CE67E5E19D7D88200D74F45 /* GoalTableViewController.swift in Sources */,
+				0CE67E8719D7DDAE00D74F45 /* ObservationsViewController.swift in Sources */,
+				0CE67E6719D7D88200D74F45 /* NewJournalCellTableViewCell.swift in Sources */,
+				0CE67E6319D7D88200D74F45 /* JournalNavigationViewController.swift in Sources */,
+				0CE67E6519D7D88200D74F45 /* NewEntryViewController.swift in Sources */,
+				0CE67E6019D7D88200D74F45 /* JournalCollectionViewCell.swift in Sources */,
+				0CE67E6919D7D88200D74F45 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CE67E2B19D7D77C00D74F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE67E3619D7D77C00D74F45 /* mindfulTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CE67E3119D7D77C00D74F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CE67E1719D7D77C00D74F45 /* mindful */;
+			targetProxy = 0CE67E3019D7D77C00D74F45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CE67E2819D7D77C00D74F45 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CE67E2919D7D77C00D74F45 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0CE67E7119D7D8FA00D74F45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CE67E7219D7D8FA00D74F45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CE67E3719D7D77C00D74F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CE67E3819D7D77C00D74F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CE67E3A19D7D77C00D74F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mindful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CE67E3B19D7D77C00D74F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mindful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0CE67E3D19D7D77C00D74F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mindfulTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindful.app/mindful";
+			};
+			name = Debug;
+		};
+		0CE67E3E19D7D77C00D74F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mindfulTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindful.app/mindful";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CE67E1319D7D77B00D74F45 /* Build configuration list for PBXProject "mindful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CE67E3719D7D77C00D74F45 /* Debug */,
+				0CE67E3819D7D77C00D74F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CE67E3919D7D77C00D74F45 /* Build configuration list for PBXNativeTarget "mindful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CE67E3A19D7D77C00D74F45 /* Debug */,
+				0CE67E3B19D7D77C00D74F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0CE67E3C19D7D77C00D74F45 /* Build configuration list for PBXNativeTarget "mindfulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CE67E3D19D7D77C00D74F45 /* Debug */,
+				0CE67E3E19D7D77C00D74F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CE67E1019D7D77B00D74F45 /* Project object */;
+}
