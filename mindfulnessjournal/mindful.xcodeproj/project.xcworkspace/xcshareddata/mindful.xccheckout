@@ -6,22 +6,30 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>352F2DD3-2F9F-4C1A-996B-D6F197ADF9AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mindful</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>223127F8EC4641F870A64ABA6EC81A05CCFA253B</key>
 		<string>https://github.com/asorge/mindfulnessjournal.git</string>
+		<key>E1FB8C97152D016DE1D922B51FDB4BB97FA7A8C9</key>
+		<string>https://github.com/asorge/staymindful.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mindfulnessjournal/mindful.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>223127F8EC4641F870A64ABA6EC81A05CCFA253B</key>
-		<string>mindfulnessjournal/</string>
+		<string>../../../../mindfulnessjournal</string>
+		<key>E1FB8C97152D016DE1D922B51FDB4BB97FA7A8C9</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/asorge/mindfulnessjournal.git</string>
+	<string>https://github.com/asorge/staymindful.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>223127F8EC4641F870A64ABA6EC81A05CCFA253B</string>
+	<string>E1FB8C97152D016DE1D922B51FDB4BB97FA7A8C9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -31,6 +39,14 @@
 			<string>223127F8EC4641F870A64ABA6EC81A05CCFA253B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>mindfulnessjournal</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1FB8C97152D016DE1D922B51FDB4BB97FA7A8C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>staymindful</string>
 		</dict>
 	</array>
 </dict>

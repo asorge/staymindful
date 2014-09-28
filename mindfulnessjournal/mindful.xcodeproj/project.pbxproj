@@ -38,6 +38,7 @@
 		0CE67E8319D7DB0600D74F45 /* ObsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */; };
 		0CE67E8519D7DD6F00D74F45 /* staymindful.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E8419D7DD6F00D74F45 /* staymindful.png */; };
 		0CE67E8719D7DDAE00D74F45 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */; };
+		0CE67E8B19D7F6EC00D74F45 /* SM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E8A19D7F6EC00D74F45 /* SM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObsViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObsViewCell.swift"; sourceTree = "<group>"; };
 		0CE67E8419D7DD6F00D74F45 /* staymindful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staymindful.png; sourceTree = "<group>"; };
 		0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = SOURCE_ROOT; };
+		0CE67E8A19D7F6EC00D74F45 /* SM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SM.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		0CE67E1A19D7D77C00D74F45 /* mindful */ = {
 			isa = PBXGroup;
 			children = (
+				0CE67E8A19D7F6EC00D74F45 /* SM.png */,
 				0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */,
 				0CE67E8419D7DD6F00D74F45 /* staymindful.png */,
 				0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE67E2A19D7D77C00D74F45 /* LaunchScreen.xib in Resources */,
+				0CE67E8B19D7F6EC00D74F45 /* SM.png in Resources */,
 				0CE67E7819D7DAB400D74F45 /* icon2.png in Resources */,
 				0CE67E7919D7DAB400D74F45 /* icon3.png in Resources */,
 				0CE67E2719D7D77C00D74F45 /* Images.xcassets in Resources */,
@@ -505,6 +509,7 @@
 				0CE67E3B19D7D77C00D74F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CE67E3C19D7D77C00D74F45 /* Build configuration list for PBXNativeTarget "mindfulTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				0CE67E3E19D7D77C00D74F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
