@@ -16,14 +16,6 @@ struct JournalEntry {
 }
 
 class EntriesTableViewController: UITableViewController, NewEntryDelegate  {
-
-    @IBAction func blankButton(sender: UIBarButtonItem) {
-        
-    }
-    
-    @IBAction func promptButton(sender: UIBarButtonItem) {
-        
-    }
     
     func newJournalEntry(text: String, creationTime: String) {
         self.entries.append(JournalEntry(journalText: text, creationTime: creationTime))
@@ -77,14 +69,12 @@ class EntriesTableViewController: UITableViewController, NewEntryDelegate  {
         
         return cell
     }
+
     
-    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-        if (segue == nil) {
-            return
-        }
-        switch segue!.identifier {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.identifier {
             case "prompt", "blank":
-                var newEntryViewController = segue!.destinationViewController as?
+                var newEntryViewController = segue.destinationViewController as?
                     NewEntryViewController
                 newEntryViewController?.delegate = self
                 newEntryViewController?.setCreationTime()

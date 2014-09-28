@@ -33,12 +33,12 @@
 		0CE67E7819D7DAB400D74F45 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7519D7DAB400D74F45 /* icon2.png */; };
 		0CE67E7919D7DAB400D74F45 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E7619D7DAB400D74F45 /* icon3.png */; };
 		0CE67E7F19D7DB0600D74F45 /* NewObsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */; };
-		0CE67E8019D7DB0600D74F45 /* ObservationsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */; };
-		0CE67E8119D7DB0600D74F45 /* ObservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */; };
 		0CE67E8319D7DB0600D74F45 /* ObsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */; };
 		0CE67E8519D7DD6F00D74F45 /* staymindful.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E8419D7DD6F00D74F45 /* staymindful.png */; };
 		0CE67E8719D7DDAE00D74F45 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */; };
 		0CE67E8B19D7F6EC00D74F45 /* SM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E8A19D7F6EC00D74F45 /* SM.png */; };
+		83FFD5BA19D8B88300C5C0D1 /* MindfulTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFD5B919D8B88300C5C0D1 /* MindfulTabBarViewController.swift */; };
+		83FFD5C019D8C0C200C5C0D1 /* TodaysEntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFD5BF19D8C0C200C5C0D1 /* TodaysEntriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,12 +82,12 @@
 		0CE67E7519D7DAB400D74F45 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/icon2.png"; sourceTree = "<group>"; };
 		0CE67E7619D7DAB400D74F45 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon3.png; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/icon3.png"; sourceTree = "<group>"; };
 		0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewObsCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/NewObsCell.swift"; sourceTree = "<group>"; };
-		0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsTableView.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObservationsTableView.swift"; sourceTree = "<group>"; };
-		0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservationsTableViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObservationsTableViewController.swift"; sourceTree = "<group>"; };
 		0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObsViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/ObsViewCell.swift"; sourceTree = "<group>"; };
 		0CE67E8419D7DD6F00D74F45 /* staymindful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staymindful.png; sourceTree = "<group>"; };
 		0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = SOURCE_ROOT; };
 		0CE67E8A19D7F6EC00D74F45 /* SM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SM.png; sourceTree = "<group>"; };
+		83FFD5B919D8B88300C5C0D1 /* MindfulTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MindfulTabBarViewController.swift; sourceTree = "<group>"; };
+		83FFD5BF19D8C0C200C5C0D1 /* TodaysEntriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodaysEntriesTableViewController.swift; path = "mindfulness journal/mindfulness journal/TodaysEntriesTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +129,11 @@
 		0CE67E1A19D7D77C00D74F45 /* mindful */ = {
 			isa = PBXGroup;
 			children = (
+				83FFD5BF19D8C0C200C5C0D1 /* TodaysEntriesTableViewController.swift */,
 				0CE67E8A19D7F6EC00D74F45 /* SM.png */,
 				0CE67E8619D7DDAE00D74F45 /* ObservationsViewController.swift */,
 				0CE67E8419D7DD6F00D74F45 /* staymindful.png */,
 				0CE67E7A19D7DB0600D74F45 /* NewObsCell.swift */,
-				0CE67E7B19D7DB0600D74F45 /* ObservationsTableView.swift */,
-				0CE67E7C19D7DB0600D74F45 /* ObservationsTableViewController.swift */,
 				0CE67E7E19D7DB0600D74F45 /* ObsViewCell.swift */,
 				0CE67E7419D7DAB400D74F45 /* icon1.png */,
 				0CE67E7519D7DAB400D74F45 /* icon2.png */,
@@ -152,6 +151,7 @@
 				0CE67E4F19D7D88200D74F45 /* JournalCollectionViewController.swift */,
 				0CE67E5019D7D88200D74F45 /* JournalEntryViewController.swift */,
 				0CE67E5119D7D88200D74F45 /* JournalNavigationViewController.swift */,
+				83FFD5B919D8B88300C5C0D1 /* MindfulTabBarViewController.swift */,
 				0CE67E5219D7D88200D74F45 /* JournalPromptViewController.swift */,
 				0CE67E5319D7D88200D74F45 /* NewEntryViewController.swift */,
 				0CE67E5419D7D88200D74F45 /* NewGoalViewController.swift */,
@@ -302,14 +302,14 @@
 				0CE67E5919D7D88200D74F45 /* BlankJournalViewController.swift in Sources */,
 				0CE67E5C19D7D88200D74F45 /* GoalTableView.swift in Sources */,
 				0CE67E5819D7D88200D74F45 /* AppDelegate.swift in Sources */,
-				0CE67E8119D7DB0600D74F45 /* ObservationsTableViewController.swift in Sources */,
+				83FFD5C019D8C0C200C5C0D1 /* TodaysEntriesTableViewController.swift in Sources */,
+				83FFD5BA19D8B88300C5C0D1 /* MindfulTabBarViewController.swift in Sources */,
 				0CE67E5D19D7D88200D74F45 /* GoalTableViewCell.swift in Sources */,
 				0CE67E8319D7DB0600D74F45 /* ObsViewCell.swift in Sources */,
 				0CE67E6119D7D88200D74F45 /* JournalCollectionViewController.swift in Sources */,
 				0CE67E7F19D7DB0600D74F45 /* NewObsCell.swift in Sources */,
 				0CE67E6419D7D88200D74F45 /* JournalPromptViewController.swift in Sources */,
 				0CE67E6619D7D88200D74F45 /* NewGoalViewController.swift in Sources */,
-				0CE67E8019D7DB0600D74F45 /* ObservationsTableView.swift in Sources */,
 				0CE67E5B19D7D88200D74F45 /* FirstViewController.swift in Sources */,
 				0CE67E5E19D7D88200D74F45 /* GoalTableViewController.swift in Sources */,
 				0CE67E8719D7DDAE00D74F45 /* ObservationsViewController.swift in Sources */,

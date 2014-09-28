@@ -16,7 +16,7 @@ struct Observation {
 
 class ObservationsViewController: UIViewController, ObsViewCellDelegate, NewObsCellDelegate, UITableViewDataSource {
 
-    @IBOutlet var tableView: ObservationsTableView!
+    @IBOutlet var tableView: UITableView!
     var observations: [Observation]!
     
     override func viewDidLoad() {

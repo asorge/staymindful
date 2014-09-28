@@ -22,7 +22,7 @@ class JournalNavigationViewController: UINavigationController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject!) {
-        println("bitches")
+        println("Segueing from navigation view controller")
     }
 
 }

@@ -14,7 +14,7 @@ protocol ObservationsTableViewDelegate {
     func cellForRowAtIndexPath(indexPath: NSIndexPath) -> UITableViewCell?
 }
 
-class ObservationsTableView: UITableView {
+class ObservationsTableView: UITableView, NewObsCellDelegate {
 
     var obsDelegate : ObservationsTableViewDelegate?
     
@@ -42,14 +42,9 @@ class ObservationsTableView: UITableView {
         }
     }
     
-    
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect)
-    {
-        // Drawing code
+    func addCell() {
+        
     }
-    */
+    
 
 }
