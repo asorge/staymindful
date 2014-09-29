@@ -15,13 +15,23 @@ struct JournalEntry {
     var creationTime : String
 }
 
-class EntriesTableViewController: UITableViewController, NewEntryDelegate  {
+class EntriesTableViewController: UITableViewController, NewEntryDelegate, JournalEntryDelegate {
     
     func newJournalEntry(text: String, creationTime: String) {
         self.entries.append(JournalEntry(journalText: text, creationTime: creationTime))
     }
     
+    func editEntry(newText: String, index: Int, originalDate : String) {
+        self.entries[index] = JournalEntry(journalText: newText, creationTime: originalDate)
+    }
+    
     var entries: [JournalEntry] = []
+    
+    var currIndex : Int!
+    
+    var currDate : String!
+    
+    var currEntry : String!
     
     @IBAction func unwindToSegue (segue : UIStoryboardSegue) {
         // Called when coming back from a segue
@@ -66,7 +76,9 @@ class EntriesTableViewController: UITableViewController, NewEntryDelegate  {
         var cell = tableView.dequeueReusableCellWithIdentifier("entry") as? NewJournalCellTableViewCell ?? NewJournalCellTableViewCell()
         var newEntry = self.entries[indexPath.row]
         cell.journalName.text = newEntry.creationTime + ": " + newEntry.journalText
-        
+        self.currIndex = indexPath.row
+        self.currDate = newEntry.creationTime
+        self.currEntry = newEntry.journalText
         return cell
     }
 
@@ -79,6 +91,8 @@ class EntriesTableViewController: UITableViewController, NewEntryDelegate  {
                 newEntryViewController?.delegate = self
                 newEntryViewController?.setCreationTime()
                 break
+            
+            
         default:
             break
             
