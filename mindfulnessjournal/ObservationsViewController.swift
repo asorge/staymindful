@@ -11,7 +11,7 @@ import UIKit
 struct Observation {
     var id: Int
     var descriptor: String
-    var intensity: String
+    var intensity: Int?
 }
 
 class ObservationsViewController: UIViewController, ObsViewCellDelegate, NewObsCellDelegate, UITableViewDataSource {
@@ -40,7 +40,7 @@ class ObservationsViewController: UIViewController, ObsViewCellDelegate, NewObsC
         }
     }
     
-    func submitNewObservation(obsText: String, intensity: String) {
+    func submitNewObservation(obsText: String, intensity: Int?) {
         var indicesToReload: [AnyObject] = [NSIndexPath(forRow: self.observations.count, inSection: 0)]
         var indicesToInsert: [AnyObject] = [NSIndexPath(forRow: self.observations.count+1, inSection: 0)]
         
@@ -75,19 +75,40 @@ class ObservationsViewController: UIViewController, ObsViewCellDelegate, NewObsC
             // get an observation item
             var cell = self.tableView.dequeueReusableCellWithIdentifier("observationCell") as? ObsViewCell ?? ObsViewCell()
             cell.delegate = self
+            var observation = self.observations![indexPath.row]
+            cell.configure(observation)
             return cell
         }
     }
     
 
     
-    func configureObservation(id: Int, descriptor: String, rating: Int) {
-        // find observation with matching id and change the values given
+    func updateObs(update: Observation) {
+        var i: Int = 0
+        while (i < self.observations!.count) {
+            var obs = self.observations![i]
+            if (obs.id == update.id) {
+                obs.descriptor = update.descriptor
+                obs.intensity = update.intensity
+            }
+            i++
+        }
     }
     
     func addCell() {
-        println("bitches")
-        // segue to an addCell modal
+        var alert = UIAlertController(title: "I observe:", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        var textF : UITextField? = nil
+        
+        alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+            textField.placeholder = "Observation"
+            textF = textField
+        })
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: {(alertAction: UIAlertAction?) in
+            let text = textF!.text
+            self.submitNewObservation(text, intensity: 5)
+        }))
+
+        self.presentViewController(alert, animated: true, completion: {})
     }
 
 }
