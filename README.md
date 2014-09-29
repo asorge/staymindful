@@ -13,4 +13,6 @@ On the journal entry page, Stay Mindful also prompts the student to enter observ
 
 Stay Mindful allows users to set goals that they would like to be reminded of when entering a new journal entry. These can be things like "focus on your breath" and "try not to judge your urges." These will be displayed as prompts on the journal-entry page. Users can rate their success on a given day with these goals, and track their success over time.
 
-Journal entries can be shared with others, such as friends and family members that are part of one's support system.
+Journal entries can be shared with others, such as friends and family members that are part of one's support system. 
+
+Entries could also be shared with a therapist who recommends this app to a patient; journaling about thoughts, emotions, and urges, and rating these on a scale from 1 to 10 every day, is already a common tool used in Dialectical Behavior Therapy, but is typically done on paper.
