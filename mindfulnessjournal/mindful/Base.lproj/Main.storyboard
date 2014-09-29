@@ -23,20 +23,24 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Write your thoughts..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dAm-lY-hul">
                                         <rect key="frame" x="35" y="183" width="506" height="106"/>
+                                        <color key="backgroundColor" red="0.9872042725446557" green="1" blue="0.85538641233881429" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <color key="textColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert"/>
                                     </textField>
                                     <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-dx-E1i">
                                         <rect key="frame" x="35" y="30" width="506" height="128"/>
+                                        <color key="backgroundColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="9IO-BN-uJ0" kind="embed" id="zvt-0a-wu1"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="dAm-lY-hul" secondAttribute="centerX" id="4MT-Ey-xhn"/>
                                     <constraint firstItem="dAm-lY-hul" firstAttribute="top" secondItem="ijk-dx-E1i" secondAttribute="bottom" constant="25" id="6t5-mu-HXH"/>
@@ -49,7 +53,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xD4-vj-aLp" firstAttribute="leading" secondItem="Sel-Re-0Pe" secondAttribute="leadingMargin" constant="-4" id="QG8-kt-dOL"/>
                             <constraint firstAttribute="centerX" secondItem="xD4-vj-aLp" secondAttribute="centerX" id="rTV-hd-nx6"/>
@@ -58,8 +62,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="new prompt" id="fKM-mH-rXz"/>
                     <navigationItem key="navigationItem" id="Z29-2P-tBe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mtR-hp-9vy"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="HUm-fa-kLb">
+                        <barButtonItem key="leftBarButtonItem" image="cancel.png" id="mtR-hp-9vy">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="done.png" id="HUm-fa-kLb">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="doneButtonPress:" destination="kAY-4Q-UtZ" id="mzl-1g-h63"/>
                             </connections>
@@ -80,13 +87,13 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="mRu-Cd-HyE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.36184883868673223" green="0.67554351953551239" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.9009381753977157" green="1" blue="0.98599356496561619" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.45907403636763011" green="0.74393774663259027" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.36184883870000001" green="0.67554351950000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="entry" id="uAF-pt-86M" customClass="NewJournalCellTableViewCell" customModule="mindful" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="entry" id="uAF-pt-86M" customClass="NewJournalCellTableViewCell" customModule="mindful" customModuleProvider="target" colorLabel="IBBuiltInLabel-Yellow">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uAF-pt-86M" id="KtL-Ti-l9v">
@@ -96,10 +103,12 @@
                                             <rect key="frame" x="8" y="30" width="279" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="shadowColor" red="1" green="0.92945928761397389" blue="0.21652798636912851" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="journalName" destination="Iu4-mg-jxw" id="lUL-Vt-F3v"/>
                                     <segue destination="7Yl-XL-Kig" kind="show" identifier="editEntry" id="89G-yL-DzM"/>
@@ -113,16 +122,17 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Today's Entries" image="icon1.png" id="1MF-4U-D2b"/>
-                    <navigationItem key="navigationItem" id="GXm-9k-A0x">
+                    <navigationItem key="navigationItem" id="GXm-9k-A0x" colorLabel="IBBuiltInLabel-Blue">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="journal prompt" id="NNw-BC-FIc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="prompticon.png" style="plain" id="NNw-BC-FIc">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="promptButtonPressed:" destination="Wm9-VP-JdX" id="j85-1C-uYz"/>
                                 <segue destination="kAY-4Q-UtZ" kind="show" identifier="prompt" id="Q3v-aW-L06"/>
                             </connections>
                         </barButtonItem>
-                        <view key="titleView" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fYP-YP-stQ">
-                            <rect key="frame" x="135" y="5.5" width="344" height="33"/>
+                        <view key="titleView" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fYP-YP-stQ" colorLabel="IBBuiltInLabel-Yellow">
+                            <rect key="frame" x="129" y="5.5" width="344" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SM.png" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-Uh-9VU">
@@ -131,6 +141,7 @@
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <accessibility key="accessibilityConfiguration">
                                 <accessibilityTraits key="traits" none="YES" image="YES"/>
                             </accessibility>
@@ -138,7 +149,8 @@
                                 <constraint firstAttribute="centerX" secondItem="WHK-Uh-9VU" secondAttribute="centerX" id="9pX-PK-iWh"/>
                             </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" title="blank journal" id="8QA-SR-G6X">
+                        <barButtonItem key="rightBarButtonItem" image="blankicon.png" id="8QA-SR-G6X">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="blankButtonPressed:" destination="Wm9-VP-JdX" id="Atu-8p-nGi"/>
                                 <segue destination="UPM-8d-ygh" kind="show" identifier="blank" id="IYP-0R-iQC"/>
@@ -166,13 +178,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="New Journal Entry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-s1-M4n">
-                                <rect key="frame" x="240" y="89" width="141" height="21"/>
+                                <rect key="frame" x="230" y="36" width="141" height="21"/>
+                                <color key="tintColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Write your thoughts..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lBJ-sl-3Bj">
-                                <rect key="frame" x="47" y="137" width="506" height="380"/>
+                                <rect key="frame" x="47" y="65" width="506" height="380"/>
+                                <color key="backgroundColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -181,13 +196,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="daZ-s1-M4n" secondAttribute="centerX" constant="-10.5" id="68u-8y-tlt"/>
                             <constraint firstItem="lBJ-sl-3Bj" firstAttribute="top" secondItem="spq-vo-JUn" secondAttribute="bottom" constant="73" id="CJG-Bn-uVD"/>
                             <constraint firstAttribute="centerX" secondItem="lBJ-sl-3Bj" secondAttribute="centerX" id="IYq-bv-Xbs"/>
                             <constraint firstItem="lBJ-sl-3Bj" firstAttribute="leading" secondItem="zB4-Sl-SN8" secondAttribute="leadingMargin" constant="31" id="MKe-IF-mGF"/>
                             <constraint firstItem="daZ-s1-M4n" firstAttribute="top" secondItem="spq-vo-JUn" secondAttribute="bottom" constant="25" id="WFL-U7-IGP"/>
+                            <constraint firstAttribute="centerX" secondItem="daZ-s1-M4n" secondAttribute="centerX" id="cDd-P4-9Bq"/>
                             <constraint firstItem="biD-rh-Mwy" firstAttribute="top" secondItem="lBJ-sl-3Bj" secondAttribute="bottom" constant="34" id="pi0-Ll-dqh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lBJ-sl-3Bj" secondAttribute="trailing" constant="31" id="u2F-2Y-PdE"/>
                         </constraints>
@@ -195,17 +211,31 @@
                     <tabBarItem key="tabBarItem" title="new blank" id="vDY-NO-JyQ"/>
                     <navigationItem key="navigationItem" id="Nwe-1G-mj7">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="N0D-qF-qgr">
+                        <barButtonItem key="leftBarButtonItem" image="cancel.png" id="N0D-qF-qgr">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelButtonPress:" destination="UPM-8d-ygh" id="cXp-X3-eev"/>
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="pMb-wq-Eum">
-                            <rect key="frame" x="76" y="5.5" width="460" height="33"/>
+                            <rect key="frame" x="81" y="5.5" width="433" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLD-no-8uy">
+                                    <rect key="frame" x="58" y="9.5" width="437" height="69"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SM.png" translatesAutoresizingMaskIntoConstraints="NO" id="tEj-ZK-JFo">
+                                    <rect key="frame" x="141" y="0.0" width="151" height="38"/>
+                                </imageView>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="tEj-ZK-JFo" secondAttribute="centerX" id="HHS-ns-sdA"/>
+                            </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BO2-Ld-nmT">
+                        <barButtonItem key="rightBarButtonItem" image="done.png" id="BO2-Ld-nmT">
+                            <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="doneButtonPress:" destination="UPM-8d-ygh" id="ZB0-d7-UPy"/>
                             </connections>
@@ -219,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEs-sL-0fG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="-846"/>
+            <point key="canvasLocation" x="957" y="-882"/>
         </scene>
         <!--Today's Entries-->
         <scene sceneID="tEz-21-ibx">
@@ -317,6 +347,7 @@
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6M9-wS-9kt">
                                 <rect key="frame" x="127" y="92" width="345" height="315"/>
+                                <color key="backgroundColor" red="0.98720427249999998" green="1" blue="0.85538641230000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -345,7 +376,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JyS-rx-VDE" firstAttribute="top" secondItem="0ya-wt-LdE" secondAttribute="bottom" constant="161" id="Ci0-qa-pf0"/>
                             <constraint firstAttribute="centerX" secondItem="6M9-wS-9kt" secondAttribute="centerX" id="cUP-Th-Hkr"/>
@@ -354,45 +385,41 @@
                             <constraint firstItem="6M9-wS-9kt" firstAttribute="top" secondItem="0ya-wt-LdE" secondAttribute="bottom" constant="28" id="zBL-gm-mJ5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Journal Entry" id="Awm-zl-uXO">
-                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="mjE-fS-Vak">
+                    <navigationItem key="navigationItem" id="Awm-zl-uXO">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="backarrow.png" id="mjE-fS-Vak">
                             <connections>
                                 <action selector="backButton:" destination="7Yl-XL-Kig" id="Aw6-tH-h57"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="QCS-SK-uiY">
+                        <view key="titleView" contentMode="scaleToFill" id="Mv5-sH-EPq">
+                            <rect key="frame" x="181" y="5.5" width="238" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SM.png" translatesAutoresizingMaskIntoConstraints="NO" id="UHT-xc-BwP">
+                                    <rect key="frame" x="47" y="0.0" width="144" height="33"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="UHT-xc-BwP" secondAttribute="centerX" id="OdJ-47-QwG"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="shareicon.png" id="QCS-SK-uiY">
                             <connections>
-                                <action selector="shareButton:" destination="7Yl-XL-Kig" id="76T-RA-pj5"/>
-                                <segue destination="YT4-9Z-F0g" kind="show" id="Nc9-pe-p20"/>
+                                <action selector="shareButton:" destination="7Yl-XL-Kig" id="82R-Vd-UFm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="ScB-F0-w4q" id="o7A-GW-VR6"/>
                         <outlet property="journalText" destination="6M9-wS-9kt" id="U0j-Ua-Ow0"/>
+                        <outlet property="shareBarButton" destination="QCS-SK-uiY" id="UXT-Wi-Rfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVu-Hw-zBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-152"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="HGK-aI-4vb">
-            <objects>
-                <viewController id="YT4-9Z-F0g" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dP5-s1-HZE"/>
-                        <viewControllerLayoutGuide type="bottom" id="QCw-yP-dRv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XyJ-Og-pMf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x0j-FM-Cbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1752" y="-157"/>
+            <point key="canvasLocation" x="1038.5" y="-152"/>
         </scene>
         <!--mindfulness journal-->
         <scene sceneID="yl2-sM-qoP">
@@ -481,7 +508,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" id="99V-g6-YiT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goal" rowHeight="61" id="Q3U-Ya-ajX" customClass="GoalTableViewCell" customModule="mindful" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -658,10 +685,12 @@
                                                     <rect key="frame" x="443" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="highlightedColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="shadowColor" red="1" green="0.92945928759999996" blue="0.21652798640000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kLr-Ev-7b9">
                                                     <rect key="frame" x="260" y="7" width="167" height="31"/>
+                                                    <color key="tintColor" red="0.16374475366806429" green="0.38184069529998832" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="sliderValueChanged:" destination="sk3-Ky-zKS" eventType="valueChanged" id="Hau-Lz-bjg"/>
                                                     </connections>
@@ -733,9 +762,15 @@
     </scenes>
     <resources>
         <image name="SM.png" width="93" height="26"/>
+        <image name="backarrow.png" width="57" height="15"/>
+        <image name="blankicon.png" width="77" height="16"/>
+        <image name="cancel.png" width="48" height="14"/>
+        <image name="done.png" width="53" height="15"/>
         <image name="icon1.png" width="40" height="32"/>
         <image name="icon2.png" width="40" height="32"/>
         <image name="icon3.png" width="40" height="32"/>
+        <image name="prompticon.png" width="96" height="15"/>
+        <image name="shareicon.png" width="63" height="15"/>
     </resources>
-    <color key="tintColor" red="0.12877170214937528" green="0.1977996269133625" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.1078630121" green="0.28619873810000002" blue="0.54647972469999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>

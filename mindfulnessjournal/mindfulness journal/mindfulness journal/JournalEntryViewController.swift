@@ -22,6 +22,7 @@ class JournalEntryViewController: UIViewController {
     
     var date : String!
     
+    @IBOutlet var shareBarButton: UIBarButtonItem!
     @IBOutlet var dateLabel: UILabel!
     
     @IBOutlet var journalText: UITextField!
@@ -29,10 +30,23 @@ class JournalEntryViewController: UIViewController {
     @IBAction func backButton(sender: AnyObject) {
         self.navigationController!.popViewControllerAnimated(true)
     }
-    
     @IBAction func shareButton(sender: AnyObject) {
-        
+        let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [self.journalText.text, self.dateLabel.text], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.barButtonItem = shareBarButton
+        activityViewController.excludedActivityTypes =  [
+            UIActivityTypePostToWeibo,
+            UIActivityTypePrint,
+            UIActivityTypeAssignToContact,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypeAddToReadingList,
+            UIActivityTypePostToFlickr,
+            UIActivityTypePostToVimeo,
+            UIActivityTypePostToTencentWeibo
+        ]
+        self.presentViewController(activityViewController, animated: true, completion: nil)
     }
+    
+    
     
     @IBAction func doneButton(sender: AnyObject) {
         var newText : String = self.journalText.text
@@ -40,6 +54,8 @@ class JournalEntryViewController: UIViewController {
         delegate!.editEntry(newText, index: self.index, originalDate: self.dateLabel.text!)
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
+
    
     
     override func viewDidLoad() {
