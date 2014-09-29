@@ -12,7 +12,6 @@
 		0CE67E3619D7D77C00D74F45 /* mindfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */; };
 		0CE67E5819D7D88200D74F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4619D7D88200D74F45 /* AppDelegate.swift */; };
 		0CE67E5919D7D88200D74F45 /* BlankJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */; };
-		0CE67E5A19D7D88200D74F45 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */; };
 		0CE67E5B19D7D88200D74F45 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4919D7D88200D74F45 /* FirstViewController.swift */; };
 		0CE67E5C19D7D88200D74F45 /* GoalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */; };
 		0CE67E5D19D7D88200D74F45 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */; };
@@ -61,7 +60,6 @@
 		0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfulTests.swift; sourceTree = "<group>"; };
 		0CE67E4619D7D88200D74F45 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/AppDelegate.swift"; sourceTree = "<group>"; };
 		0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlankJournalViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/BlankJournalViewController.swift"; sourceTree = "<group>"; };
-		0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntriesTableViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/EntriesTableViewController.swift"; sourceTree = "<group>"; };
 		0CE67E4919D7D88200D74F45 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/FirstViewController.swift"; sourceTree = "<group>"; };
 		0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableView.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/GoalTableView.swift"; sourceTree = "<group>"; };
 		0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableViewCell.swift; path = "../../mindfulnessjournal/mindfulness journal/mindfulness journal/GoalTableViewCell.swift"; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				0CE67E7119D7D8FA00D74F45 /* Main.storyboard */,
 				0CE67E4619D7D88200D74F45 /* AppDelegate.swift */,
 				0CE67E4719D7D88200D74F45 /* BlankJournalViewController.swift */,
-				0CE67E4819D7D88200D74F45 /* EntriesTableViewController.swift */,
 				0CE67E4919D7D88200D74F45 /* FirstViewController.swift */,
 				0CE67E4A19D7D88200D74F45 /* GoalTableView.swift */,
 				0CE67E4B19D7D88200D74F45 /* GoalTableViewCell.swift */,
@@ -298,7 +295,6 @@
 				0CE67E5F19D7D88200D74F45 /* JournalCollectionView.swift in Sources */,
 				0CE67E6819D7D88200D74F45 /* SecondViewController.swift in Sources */,
 				0CE67E6219D7D88200D74F45 /* JournalEntryViewController.swift in Sources */,
-				0CE67E5A19D7D88200D74F45 /* EntriesTableViewController.swift in Sources */,
 				0CE67E5919D7D88200D74F45 /* BlankJournalViewController.swift in Sources */,
 				0CE67E5C19D7D88200D74F45 /* GoalTableView.swift in Sources */,
 				0CE67E5819D7D88200D74F45 /* AppDelegate.swift in Sources */,

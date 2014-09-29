@@ -8,7 +8,12 @@
 
 import UIKit
 
-class TodaysEntriesTableViewController: UITableViewController, NewEntryDelegate {
+struct JournalEntry {
+    var journalText : String
+    var creationTime : String
+}
+
+class TodaysEntriesTableViewController: UITableViewController, NewEntryDelegate, JournalEntryDelegate {
 
     func newJournalEntry(text: String, creationTime: String) {
         self.entries.append(JournalEntry(journalText: text, creationTime: creationTime))
@@ -16,11 +21,23 @@ class TodaysEntriesTableViewController: UITableViewController, NewEntryDelegate 
     
     var entries: [JournalEntry] = []
     
+    var currIndex : Int!
+    
+    var currDate : String!
+    
+    var currEntry : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
+    
+    func editEntry(newText: String, index: Int, originalDate : String) {
+        self.entries[index].journalText = newText
+        var indicesToReload: [AnyObject] = [NSIndexPath(forRow: index, inSection: 0)]
+        self.tableView.reloadRowsAtIndexPaths(indicesToReload, withRowAnimation: UITableViewRowAnimation.Fade)
+    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -36,6 +53,9 @@ class TodaysEntriesTableViewController: UITableViewController, NewEntryDelegate 
         var cell = tableView.dequeueReusableCellWithIdentifier("entry") as? NewJournalCellTableViewCell ?? NewJournalCellTableViewCell()
         var newEntry = self.entries[indexPath.row]
         cell.journalName.text = newEntry.creationTime + ": " + newEntry.journalText
+        self.currIndex = indexPath.row
+        self.currDate = newEntry.creationTime
+        self.currEntry = newEntry.journalText
         return cell
 
     }
@@ -84,6 +104,15 @@ class TodaysEntriesTableViewController: UITableViewController, NewEntryDelegate 
             newEntryViewController?.delegate = self
             newEntryViewController?.setCreationTime()
             break
+        case "editEntry":
+            var journalEntryViewController = segue.destinationViewController as? JournalEntryViewController
+            journalEntryViewController?.delegate = self
+            journalEntryViewController?.index = self.currIndex
+            journalEntryViewController?.date = self.currDate
+            journalEntryViewController?.text = self.currEntry
+            break
+            
+            
         default:
             break
             
