@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD4118719D8DD32007C498D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD4118619D8DD32007C498D /* Social.framework */; };
 		0CE67E2719D7D77C00D74F45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E2619D7D77C00D74F45 /* Images.xcassets */; };
 		0CE67E2A19D7D77C00D74F45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE67E2819D7D77C00D74F45 /* LaunchScreen.xib */; };
 		0CE67E3619D7D77C00D74F45 /* mindfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE67E3519D7D77C00D74F45 /* mindfulTests.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD4118619D8DD32007C498D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0CE67E1819D7D77C00D74F45 /* mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE67E1C19D7D77C00D74F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CE67E2619D7D77C00D74F45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD4118719D8DD32007C498D /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 		0CE67E0F19D7D77B00D74F45 = {
 			isa = PBXGroup;
 			children = (
+				0CD4118619D8DD32007C498D /* Social.framework */,
 				0CE67E1A19D7D77C00D74F45 /* mindful */,
 				0CE67E3219D7D77C00D74F45 /* mindfulTests */,
 				0CE67E1919D7D77C00D74F45 /* Products */,

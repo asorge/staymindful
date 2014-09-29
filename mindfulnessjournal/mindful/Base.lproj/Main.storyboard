@@ -363,6 +363,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Share" id="QCS-SK-uiY">
                             <connections>
                                 <action selector="shareButton:" destination="7Yl-XL-Kig" id="76T-RA-pj5"/>
+                                <segue destination="YT4-9Z-F0g" kind="show" id="Nc9-pe-p20"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -374,6 +375,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVu-Hw-zBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062" y="-152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HGK-aI-4vb">
+            <objects>
+                <viewController id="YT4-9Z-F0g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dP5-s1-HZE"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCw-yP-dRv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XyJ-Og-pMf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0j-FM-Cbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="-157"/>
         </scene>
         <!--mindfulness journal-->
         <scene sceneID="yl2-sM-qoP">
